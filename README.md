@@ -1,7 +1,3 @@
-# Unit 5 - Financial Planning
-
-![Financial Planner](Images/financial-planner.png)
-
 ## Background
 
 You decided to start a FinTech consultancy firm, and you want to make a difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union asked you to develop a prototype application to demo in the next credit union assembly.
@@ -14,19 +10,13 @@ The first will be a personal finance planner that will allow users to visualize 
 
 The second tool will be a retirement planning tool that will use the Alpaca API to fetch historical closing prices for a retirement portfolio composed of stocks and bonds, then run Monte Carlo simulations to project the portfolio performance at 30 years. You will then use the Monte Carlo data to calculate the expected portfolio returns given a specific initial investment amount.
 
----
 
-### Files
-
-* [Personal Finance Planner starter code](Starter_Code/financial-planner.ipynb)
-
-* [MCForecastTools toolkit](Starter_Code/MCForecastTools.py)
 
 ---
 
 ### Resources
 
-This homework will utilize two APIs:
+This will utilize two APIs:
 
 * The **Alpaca Markets API** will be used to pull historical stocks and bonds information.
 
@@ -63,8 +53,6 @@ Use the starter Jupyter notebook to complete the following steps.
 
 3. Parse the API JSON response to select only the crypto prices and store each price in a variable.
 
-    **Hint:** Be aware of the particular identifier for each cryptocurrency in the API JSON response - the bitcoin identifier is `1` whereas ethereum is `1027`.
-
 4. Compute the portfolio value of cryptocurrencies and print the results.
 
 #### Collect Investments Data Using Alpaca: `SPY` (stocks) and `AGG` (bonds)
@@ -90,8 +78,6 @@ In this section, you will assess the financial health of the credit union's memb
 1. Create a variable called `monthly_income` and set its value to `12000`.
 
 2. To analyze savings health, create a DataFrame called `df_savings` with two rows. Store the total value in dollars of the crypto assets in the first row and the total value of the shares in the second row.
-
-    **Hint:** The `df_savings` DataFrame should have one column named `amount` and two rows where `crypto` and `shares` are the index values:
 
     ![df_savings](Images/df_savings.png)
 
@@ -132,82 +118,3 @@ Follow the steps outlined in the starter notebook to complete the following:
 1. Given an initial investment of `$20,000`, calculate the expected portfolio return in dollars at the `95%` lower and upper confidence intervals.
 
 2. Calculate the expected portfolio return at the `95%` lower and upper confidence intervals based on a `50%` increase in the initial investment.
-
-### Optional Challenge - Early Retirement
-
-The CTO of the Credit Union was really impressed with your work on this planner, but commented that `30` years seems like such a long time to wait to retire! The CTO starts wondering if the retirement plan could be adjusted to account for an earlier than normal retirement.
-
-Try adjusting the portfolio to either include more risk (a higher stock than bond ratio) or to have a larger initial investment and rerun the retirement analysis to see what it would take to retire in `5` or `10` years instead of `30`!
-
----
-
-### Hints and Considerations
-
-* To allow for quicker work during the Monte Carlo simulation, start out by running `100` simulations for one year of returns, and when you have the code worked out, run the full `500` simulations for `30` years.
-
-* Remember to add the `.env` files to the `.gitignore` configuration to avoid exposing your API keys in your GitHub repository.
-
-* A `.gitignore` file contains file names and extensions of files that you don't want pushed to your repository. For more information on how a `gitignore` works, you can read the documentation [here](https://docs.github.com/en/github/using-git/ignoring-files).
-
-### Submission
-
-1. Use the starter Jupyter Notebook for your Personal Finance Planner.
-
-2. Submit your notebook to a new GitHub repository and create a `README.md` file.
-
-3. Submit the link to your GitHub project to Bootcampspot for grading.
-
----
-
-### Requirements
-
-#### Personal Finance Planner  (35 points)
-
-##### To receive all points, your code must:
-
-* Collect crypto prices using the requests Library. (10 points)
-* Collect investments data using Alpaca: SPY (stocks) and AGG (bonds). (10 points)
-* Perform a savings health analysis. (15 points)
-
-
-#### Retirement Planning (35 points)
-
-##### To receive all points, your code must:
-
-* Complete a Monte Carlo Simulation with 500 runs. (15 points)
-* Plot the Monte Carlo simulation results. (5 points)
-* Plot the probability distribution and confidence intervals. (5 points)
-* Complete the retirement analysis. (10 points)
-
-#### Optional Bonus (10 points)
-
-##### To receive all bonus points, your code must:
-
-* Optional: Adjust the portfolio to reflect an early retirement and rerun the analysis to show either a higher stock than bond ratio, or to have a higher initial investment. (10 points)
-
-#### Coding Conventions and Formatting (10 points)
-
-##### To receive all points, your code must:
-
-* Place imports at the beginning of the file, just after any module comments and docstrings and before module globals and constants. (3 points)
-* Name functions and variables with lowercase characters and with words separated by underscores. (2 points)
-* Follow Don't Repeat Yourself (DRY) principles by creating maintainable and reusable code. (3 points)
-* Use concise logic and creative engineering where possible. (2 points)
-
-#### Deployment and Submission (10 points)
-
-##### To receive all points, you must:
-
-* Submit a link to a GitHub repository that’s cloned to your local machine and contains your files. (5 points)
-* Include appropriate commit messages in your files. (5 points)
-
-#### Code Comments (10 points)
-
-##### To receive all points, your code must:
-
-* Be well commented with concise, relevant notes that other developers can understand. (10 points)
-
-
----
-
-© 2022 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.

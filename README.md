@@ -27,7 +27,6 @@ The documentation for these APIs can be found via the following links:
 * [Free Crypto API Documentation](https://alternative.me/crypto/api/)
 
 * [AlpacaDOCS](https://alpaca.markets/docs/)
----
 
 ## Instructions
 

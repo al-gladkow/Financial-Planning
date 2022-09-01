@@ -1,10 +1,6 @@
 ## Background
 
-You decided to start a FinTech consultancy firm, and you want to make a difference by working on projects with high social impact in local communities. You just won your first contract to help one of the biggest credit unions in your area. They want to create a tool that helps their members enhance their financial health. The Chief Technology Officer (CTO) of the credit union asked you to develop a prototype application to demo in the next credit union assembly.
-
-The credit union board wants to allow the union's members to assess their monthly personal finances, and also be able to forecast a reasonably good retirement plan based on cryptocurrencies, stocks, and bonds.
-
-In this homework activity, you will use all the skills you have learned until now - focusing on using APIs as part of the technical solution - to create two financial analysis tools.
+You create two financial analysis tools:
 
 The first will be a personal finance planner that will allow users to visualize their savings composed by investments in shares and cryptocurrencies to assess if they have enough money as an emergency fund.
 
@@ -51,8 +47,6 @@ Use the starter Jupyter notebook to complete the following steps.
 4. Compute the portfolio value of cryptocurrencies and print the results.
 
 #### Collect Investments Data Using Alpaca: `SPY` (stocks) and `AGG` (bonds)
-
-**Important:** Remember to create a `.env` file in your working directory to store the values of your Alpaca API key and Alpaca secret key.
 
 1. Create two variables named `my_agg` and `my_spy` and set them equal to `200` and `50`, respectively.
 
